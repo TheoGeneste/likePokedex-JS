@@ -1,0 +1,95 @@
+<!--https://camo.githubusercontent.com/b3e3ceb93a2a26467a1544fc19e451b99548e1d40765c13756e0a147fb72a580/68747470733a2f2f692e696d6775722e636f6d2f4542356b6755342e706e67-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PokeDex</title>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="left-part">
+        <header>
+            <navbar>
+                <h3>Like Pokedex</h3>
+                <img src="assets/001-home.png" class="logo">
+                <li><a href="#">Générations</a>
+                    <ul>
+                        <li><a href="#">Génération i</a></li>
+                        <li><a href="#">Génération ii</a></li>
+                        <li><a href="#">Génération iii</a></li>
+                        <li><a href="#">Génération iv</a></li>
+                        <li><a href="#">Génération v</a></li>
+                        <li><a href="#">Génération vi</a></li>
+                    </ul>
+                </li>
+            </navbar>
+        </header>
+        <div id="filter-part">
+            <h1>Pokedex</h1>
+            <p>Chercher un Pokémon avec ces filtres</p>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name or id of Pokemon" class="form-field">
+                </div>
+                <div class="form-group">
+                    <label for="type" class="form-label">Type</label>
+                    <select type="select" name="type" id="type" placeholder="Type of Pokemon" class="form-field">
+                        <option></option>
+                    </select>
+                </div>
+        </div>
+        <div id="list-pokemon-part">
+            <h1 id="generation-choose">Génération 1 </h1>
+            <div class="tabs">
+                <div class="tab-registers">
+                </div>
+                <div class="tab-bodies">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="right-part">
+        <h1 id="name-pokemon-selected">Bulbizarre #001</h1>
+        <div id="img-list">
+            <div class='previous-img'>
+                <img id="previous-img" />
+            </div>
+            <div class='current-img'>
+                <img id="current-img" />
+            </div>
+            <div class="next-img">
+                <img id="next-img"/>
+            </div>
+        </div>
+        <div class="details-pokemon">
+            <div class="type">
+                <h1>Type</h1>
+                <ul id="types-pokemons">
+                    <li></li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="height-category">
+                    <h1>Height</h1>
+                    <p id="height"></p>
+                    <h1>Category</h1>
+                    <p id="category"></p>
+                </div>
+                <div class="height-category">
+                    <h1>Weight</h1>
+                    <p id="weight"></p>
+                    <h1>Abilities</h1>
+                    <ul id="abilities"></ul>
+                </div>
+            </div>
+            <div class="faiblesse">
+                <h1>Weekness</h1>
+                <ul id="weaknesses">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="application/javascript" />
+</body>
+</html>
